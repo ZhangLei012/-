@@ -1,4 +1,9 @@
 # 给定无重复字符的字符串，生成它的所有排列。
+void swap(char& a, char& b) {
+	char c = a;
+	a = b;
+	b = c;
+}
 void all_permutation(int start, string s) {
 	if (start==s.length()) {
 		cout << s << endl;
